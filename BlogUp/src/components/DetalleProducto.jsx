@@ -10,11 +10,12 @@ function DetalleProducto() {
         return <h2>Ups, el producto no existe.</h2>
     }
     return (
-        <div>
-            <h2>Detalle del producto</h2>
-            <h2>{producto.nombre}</h2>
-            <p>{producto.descripcion}</p>
-            <h3>{producto.precio}</h3>
+        <div className="detail-Container">
+            <h2 className="detail-Title">Detalle del producto</h2>
+            <h2 className="detail-TitleProd">CORSAIR {producto.nombre}</h2>
+            <img className="detail-Img" src={producto.imagen} alt="Teclado" />
+            <p className="detail-Description">{producto.descripcion}</p>
+            <h3 className="detail-Price">$ {producto.precio}</h3>
         </div>
     )
 }

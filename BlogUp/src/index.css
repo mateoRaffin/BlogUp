@@ -15,9 +15,10 @@
 
 a {
   color: #FAFAFA;
+  text-decoration: none;
 }
 a:hover {
-  color: #747bff;
+  color: #646cff;
 }
 
 ul {
@@ -28,16 +29,14 @@ ul {
 li {
   list-style: none;
   padding: 20px;
-  background-color: #646cff;
-  border-radius: 15px;
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
 }
 
 h1 {
@@ -45,7 +44,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -75,4 +74,5 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
+

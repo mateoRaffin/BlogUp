@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom"
 
 
-function Producto({nombre,precio,id}){
+function Producto({nombre,imagen,precio,id}){
     return(
         <Link to={`/productos/${id}`} className="card">
-            <h2>{nombre}</h2>
-            <h3>{precio}</h3>
+            <h2 className="title-Card">{nombre}</h2>
+            <img className="img-Card" src={imagen} />
+            <h3 className="price-Card">$ {precio}</h3>
         </Link>
     )
 }
