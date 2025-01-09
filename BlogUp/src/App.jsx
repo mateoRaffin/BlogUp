@@ -7,6 +7,7 @@ import Layout from './components/Layout';
 import Error from './components/Error';
 import Productos from './components/Productos';
 import Nosotros from './components/Nosotros';
+import DetalleProducto from './components/DetalleProducto';
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' element={<Layout/>}>
             <Route index element={<Home/>}/>
             <Route path='productos' element={<Productos/>}/>
+            <Route path='productos/:id' element={<DetalleProducto/>}/>
             <Route path='nosotros' element={<Nosotros/>}/>
             <Route path='*' element={<Error/>}/>
           </Route>

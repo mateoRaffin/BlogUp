@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom"
 
-function Producto(){
+
+function Producto({nombre,precio,id}){
     return(
-        <div>Producto</div>
+        <Link to={`/productos/${id}`} className="card">
+            <h2>{nombre}</h2>
+            <h3>{precio}</h3>
+        </Link>
     )
 }
 
